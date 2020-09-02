@@ -1,0 +1,30 @@
+clase Sello
+
+(+) mensaje : string
+
+(+) color : ConsoleColor
+
+
+(+) Imprimir() : string
+
+(+) Borrar() : void
+
+(+) ImprimirEnColor() : void
+
+
+Main()
+
+Sello.mensaje = "asdfasdf"
+
+Sello.Imprimir();//retorna string
+
+Sello.Borrar();
+
+Sello.Imprimir();//retorna string
+
+Sello.mensaje = "hola mundo"
+Sello.color = ConsoleColor.Red;
+Sello.ImprimirEnColor();
+
+Sello.Imprimir();//retorna string
+		

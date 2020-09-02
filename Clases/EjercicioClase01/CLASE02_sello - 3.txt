@@ -1,0 +1,18 @@
+clase Sello
+
+(+) mensaje : string
+
+(+) color : ConsoleColor
+
+
+(+) Imprimir() : string -> ArmarFormatoMensaje
+
+(+) Borrar() : void
+
+(+) ImprimirEnColor() : void --> Imprimir
+
+(-) ArmarFormatoMensaje() : string
+
+************\n
+*hola mundo*\n			
+************
