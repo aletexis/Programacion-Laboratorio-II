@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{610AD04D-CD0B-4D9C-AF48-9E41A1E8ED1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test.sobrecarga.operadores", "test.sobrecarga.operadores\test.sobrecarga.operadores.csproj", "{22F07033-4832-408F-8348-6C2E49680614}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{610AD04D-CD0B-4D9C-AF48-9E41A1E8ED1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{610AD04D-CD0B-4D9C-AF48-9E41A1E8ED1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{610AD04D-CD0B-4D9C-AF48-9E41A1E8ED1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{610AD04D-CD0B-4D9C-AF48-9E41A1E8ED1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22F07033-4832-408F-8348-6C2E49680614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22F07033-4832-408F-8348-6C2E49680614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22F07033-4832-408F-8348-6C2E49680614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22F07033-4832-408F-8348-6C2E49680614}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7846683-9138-4996-B4F5-652D2ADBAC65}
+	EndGlobalSection
+EndGlobal
