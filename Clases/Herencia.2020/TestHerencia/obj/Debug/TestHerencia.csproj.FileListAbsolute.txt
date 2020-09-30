@@ -1,0 +1,10 @@
+C:\Users\Maxi\source\repos\Herencia.2020\TestHerencia\bin\Debug\TestHerencia.exe.config
+C:\Users\Maxi\source\repos\Herencia.2020\TestHerencia\bin\Debug\TestHerencia.exe
+C:\Users\Maxi\source\repos\Herencia.2020\TestHerencia\bin\Debug\TestHerencia.pdb
+C:\Users\Maxi\source\repos\Herencia.2020\TestHerencia\bin\Debug\Entidades.dll
+C:\Users\Maxi\source\repos\Herencia.2020\TestHerencia\bin\Debug\Entidades.pdb
+C:\Users\Maxi\source\repos\Herencia.2020\TestHerencia\obj\Debug\TestHerencia.csprojAssemblyReference.cache
+C:\Users\Maxi\source\repos\Herencia.2020\TestHerencia\obj\Debug\TestHerencia.csproj.CoreCompileInputs.cache
+C:\Users\Maxi\source\repos\Herencia.2020\TestHerencia\obj\Debug\TestHerencia.csproj.CopyComplete
+C:\Users\Maxi\source\repos\Herencia.2020\TestHerencia\obj\Debug\TestHerencia.exe
+C:\Users\Maxi\source\repos\Herencia.2020\TestHerencia\obj\Debug\TestHerencia.pdb

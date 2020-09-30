@@ -1,0 +1,10 @@
+C:\Users\Maxi\source\repos\Formularios.2020\TestVinoVinoteca\bin\Debug\TestVinoVinoteca.exe.config
+C:\Users\Maxi\source\repos\Formularios.2020\TestVinoVinoteca\bin\Debug\TestVinoVinoteca.exe
+C:\Users\Maxi\source\repos\Formularios.2020\TestVinoVinoteca\bin\Debug\TestVinoVinoteca.pdb
+C:\Users\Maxi\source\repos\Formularios.2020\TestVinoVinoteca\bin\Debug\Entidades.dll
+C:\Users\Maxi\source\repos\Formularios.2020\TestVinoVinoteca\bin\Debug\Entidades.pdb
+C:\Users\Maxi\source\repos\Formularios.2020\TestVinoVinoteca\obj\Debug\TestVinoVinoteca.csprojAssemblyReference.cache
+C:\Users\Maxi\source\repos\Formularios.2020\TestVinoVinoteca\obj\Debug\TestVinoVinoteca.csproj.CoreCompileInputs.cache
+C:\Users\Maxi\source\repos\Formularios.2020\TestVinoVinoteca\obj\Debug\TestVinoVinoteca.csproj.CopyComplete
+C:\Users\Maxi\source\repos\Formularios.2020\TestVinoVinoteca\obj\Debug\TestVinoVinoteca.exe
+C:\Users\Maxi\source\repos\Formularios.2020\TestVinoVinoteca\obj\Debug\TestVinoVinoteca.pdb

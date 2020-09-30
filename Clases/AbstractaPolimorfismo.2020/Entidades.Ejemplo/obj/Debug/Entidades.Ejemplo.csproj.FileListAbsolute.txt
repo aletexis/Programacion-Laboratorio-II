@@ -1,0 +1,6 @@
+C:\Users\Maxi\source\repos\AbstractaPolimorfismo.2020\Entidades.Ejemplo\bin\Debug\Entidades.dll
+C:\Users\Maxi\source\repos\AbstractaPolimorfismo.2020\Entidades.Ejemplo\bin\Debug\Entidades.pdb
+C:\Users\Maxi\source\repos\AbstractaPolimorfismo.2020\Entidades.Ejemplo\obj\Debug\Entidades.Ejemplo.csproj.CoreCompileInputs.cache
+C:\Users\Maxi\source\repos\AbstractaPolimorfismo.2020\Entidades.Ejemplo\obj\Debug\Entidades.dll
+C:\Users\Maxi\source\repos\AbstractaPolimorfismo.2020\Entidades.Ejemplo\obj\Debug\Entidades.pdb
+C:\Users\Maxi\source\repos\AbstractaPolimorfismo.2020\Entidades.Ejemplo\obj\Debug\Entidades.Ejemplo.csprojAssemblyReference.cache

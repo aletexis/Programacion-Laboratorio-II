@@ -1,0 +1,14 @@
+C:\Users\Maxi\source\repos\Formularios.2020\FormularioVinoVinoteca\bin\Debug\FormularioVinoVinoteca.exe.config
+C:\Users\Maxi\source\repos\Formularios.2020\FormularioVinoVinoteca\bin\Debug\FormularioVinoVinoteca.exe
+C:\Users\Maxi\source\repos\Formularios.2020\FormularioVinoVinoteca\bin\Debug\FormularioVinoVinoteca.pdb
+C:\Users\Maxi\source\repos\Formularios.2020\FormularioVinoVinoteca\bin\Debug\Entidades.dll
+C:\Users\Maxi\source\repos\Formularios.2020\FormularioVinoVinoteca\bin\Debug\Entidades.pdb
+C:\Users\Maxi\source\repos\Formularios.2020\FormularioVinoVinoteca\obj\Debug\FormularioVinoVinoteca.csprojAssemblyReference.cache
+C:\Users\Maxi\source\repos\Formularios.2020\FormularioVinoVinoteca\obj\Debug\FormularioVinoVinoteca.FrmVinoteca.resources
+C:\Users\Maxi\source\repos\Formularios.2020\FormularioVinoVinoteca\obj\Debug\FormularioVinoVinoteca.Properties.Resources.resources
+C:\Users\Maxi\source\repos\Formularios.2020\FormularioVinoVinoteca\obj\Debug\FormularioVinoVinoteca.FrmVino.resources
+C:\Users\Maxi\source\repos\Formularios.2020\FormularioVinoVinoteca\obj\Debug\FormularioVinoVinoteca.csproj.GenerateResource.cache
+C:\Users\Maxi\source\repos\Formularios.2020\FormularioVinoVinoteca\obj\Debug\FormularioVinoVinoteca.csproj.CoreCompileInputs.cache
+C:\Users\Maxi\source\repos\Formularios.2020\FormularioVinoVinoteca\obj\Debug\FormularioVinoVinoteca.csproj.CopyComplete
+C:\Users\Maxi\source\repos\Formularios.2020\FormularioVinoVinoteca\obj\Debug\FormularioVinoVinoteca.exe
+C:\Users\Maxi\source\repos\Formularios.2020\FormularioVinoVinoteca\obj\Debug\FormularioVinoVinoteca.pdb

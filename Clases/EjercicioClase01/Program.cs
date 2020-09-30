@@ -6,6 +6,8 @@ namespace EjercicioClase01
     {
         public static void Main(string[] args)
         {
+            Console.Title = "EjercicioClase01";
+
             Sello.mensaje = "asdasdas"; //asigno un mensaje
 
             Console.WriteLine(Sello.Imprimir()); //lo muestro

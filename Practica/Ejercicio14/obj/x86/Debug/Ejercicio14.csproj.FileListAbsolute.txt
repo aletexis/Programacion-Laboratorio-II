@@ -1,0 +1,5 @@
+/home/ale/Projects/EscubillaTexis.Alejandra/Ejercicio14/bin/Debug/Ejercicio14.exe
+/home/ale/Projects/EscubillaTexis.Alejandra/Ejercicio14/bin/Debug/Ejercicio14.pdb
+/home/ale/Projects/EscubillaTexis.Alejandra/Ejercicio14/obj/x86/Debug/Ejercicio14.csproj.CoreCompileInputs.cache
+/home/ale/Projects/EscubillaTexis.Alejandra/Ejercicio14/obj/x86/Debug/Ejercicio14.exe
+/home/ale/Projects/EscubillaTexis.Alejandra/Ejercicio14/obj/x86/Debug/Ejercicio14.pdb

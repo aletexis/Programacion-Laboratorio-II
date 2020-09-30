@@ -1,0 +1,10 @@
+C:\Users\Maxi\source\repos\AbstractaPolimorfismo.2020\Ejemplo1\bin\Debug\Ejemplo1.exe.config
+C:\Users\Maxi\source\repos\AbstractaPolimorfismo.2020\Ejemplo1\bin\Debug\Ejemplo1.exe
+C:\Users\Maxi\source\repos\AbstractaPolimorfismo.2020\Ejemplo1\bin\Debug\Ejemplo1.pdb
+C:\Users\Maxi\source\repos\AbstractaPolimorfismo.2020\Ejemplo1\bin\Debug\Entidades.dll
+C:\Users\Maxi\source\repos\AbstractaPolimorfismo.2020\Ejemplo1\bin\Debug\Entidades.pdb
+C:\Users\Maxi\source\repos\AbstractaPolimorfismo.2020\Ejemplo1\obj\Debug\Ejemplo1.csprojAssemblyReference.cache
+C:\Users\Maxi\source\repos\AbstractaPolimorfismo.2020\Ejemplo1\obj\Debug\Ejemplo1.csproj.CoreCompileInputs.cache
+C:\Users\Maxi\source\repos\AbstractaPolimorfismo.2020\Ejemplo1\obj\Debug\Ejemplo1.csproj.CopyComplete
+C:\Users\Maxi\source\repos\AbstractaPolimorfismo.2020\Ejemplo1\obj\Debug\Ejemplo1.exe
+C:\Users\Maxi\source\repos\AbstractaPolimorfismo.2020\Ejemplo1\obj\Debug\Ejemplo1.pdb
