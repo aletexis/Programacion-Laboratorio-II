@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Enti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHerencia", "TestHerencia\TestHerencia.csproj", "{CE5D27DD-08A1-4EE0-8631-7D7BA7A24841}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWindowsForm", "TestWindowsForm\TestWindowsForm.csproj", "{0106D890-5FA4-46BF-9DCB-871CC2EAE0D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractaTest.2020", "AbstractaTest.2020\AbstractaTest.2020.csproj", "{DDFB20A6-8856-4B4F-868A-A2B47CB5C2B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{CE5D27DD-08A1-4EE0-8631-7D7BA7A24841}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE5D27DD-08A1-4EE0-8631-7D7BA7A24841}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE5D27DD-08A1-4EE0-8631-7D7BA7A24841}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0106D890-5FA4-46BF-9DCB-871CC2EAE0D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0106D890-5FA4-46BF-9DCB-871CC2EAE0D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0106D890-5FA4-46BF-9DCB-871CC2EAE0D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0106D890-5FA4-46BF-9DCB-871CC2EAE0D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDFB20A6-8856-4B4F-868A-A2B47CB5C2B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDFB20A6-8856-4B4F-868A-A2B47CB5C2B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDFB20A6-8856-4B4F-868A-A2B47CB5C2B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDFB20A6-8856-4B4F-868A-A2B47CB5C2B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -14,7 +14,7 @@ namespace Herencia._2020
 
             ClaseBase cb = new ClaseBase(6);
             cb.nombre = "clase base";
-            
+
             ClaseDerivada cd = new ClaseDerivada(1);
 
             cd.nombre = "clase derivada";            

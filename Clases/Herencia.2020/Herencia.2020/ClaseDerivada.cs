@@ -28,11 +28,7 @@ namespace Herencia
 
         public void Compila()
         {
-<<<<<<< Updated upstream
             Console.WriteLine("{0} - {1} - {2}", base.Id, base.nombre, base.edad);
-=======
-            Console.WriteLine("{0} - {1} - {2} - {3}",  base.Id, base.nombre, base.edad, this.algo);
->>>>>>> Stashed changes
         }
 
         #endregion

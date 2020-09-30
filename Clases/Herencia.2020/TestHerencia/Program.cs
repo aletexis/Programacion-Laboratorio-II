@@ -35,7 +35,7 @@ namespace TestHerencia
             empresa += p3;
             empresa += p4;
 
-            Console.WriteLine(empresa.Mostrar());
+            Console.WriteLine(empresa.ToString());
 
             Console.ReadLine();
 
@@ -43,25 +43,25 @@ namespace TestHerencia
             //ordenamiento por SUELDO ascendente
             empresa.Empleados.Sort(Empleado.OrdernarPorSueldoAsc);
 
-            Console.WriteLine(empresa.Mostrar());
+            Console.WriteLine(empresa.ToString());
             Console.ReadLine();
 
             //ordenamiento por SUELDO descendente
             empresa.Empleados.Sort(Empleado.OrdernarPorSueldoDesc);
 
-            Console.WriteLine(empresa.Mostrar());
+            Console.WriteLine(empresa.ToString());
             Console.ReadLine();
 
             //ordenamiento por APELLIDO ascendente
             empresa.Empleados.Sort(Empleado.OrdernarPorApellidoAsc);
 
-            Console.WriteLine(empresa.Mostrar());
+            Console.WriteLine(empresa.ToString());
             Console.ReadLine();
 
             //ordenamiento por APELLIDO descendente
             empresa.Empleados.Sort(Empleado.OrdernarPorApellidoDesc);
 
-            Console.WriteLine(empresa.Mostrar());
+            Console.WriteLine(empresa);
             Console.ReadLine();
 
             Console.Clear();
@@ -77,17 +77,17 @@ namespace TestHerencia
 
             if (! (empresa - p))
             {
-                Console.WriteLine("No se pudo eliminar al empleado {0}", p.MostrarProgramador());
+                Console.WriteLine("No se pudo eliminar al empleado {0}", p.ToString());
             }
 
             if (empresa - a2)
             {
-                Console.WriteLine("Se pudo eliminar al empleado {0}", a2.MostrarAdministrativo());
+                Console.WriteLine("Se pudo eliminar al empleado {0}", a2.ToString());
             }
 
             Console.WriteLine();
 
-            Console.WriteLine(empresa.Mostrar());
+            Console.WriteLine(empresa.ToString());
 
             Console.ReadLine();
         }

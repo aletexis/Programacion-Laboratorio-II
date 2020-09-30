@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Empleado
+    public abstract class Empleado
     {
         #region Atributos
 
@@ -55,7 +55,8 @@ namespace Entidades
 
         #region Métodos
 
-        public string MostrarEmpleado()
+        //SE CAMBIA EL NIVEL DE ACCESIBILIDAD DE PUBLICO A PROTEGIDO
+        protected virtual string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
 
@@ -117,6 +118,32 @@ namespace Entidades
         public static bool operator !=(Empleado e1, Empleado e2)
         {
             return ! (e1 == e2);
+        }
+
+        #endregion
+
+        #region Polimorfismo
+
+        public override string ToString()
+        {
+            return this.Mostrar();
+        }
+
+        public override bool Equals(object obj)
+        {
+            bool rta = false;
+
+            if (obj is Empleado)
+            {
+                rta = this == (Empleado)obj;
+            }
+
+            return rta;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
 
         #endregion

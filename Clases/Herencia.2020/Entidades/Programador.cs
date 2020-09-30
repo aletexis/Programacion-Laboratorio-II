@@ -42,18 +42,28 @@ namespace Entidades
 
 		#region Métodos
 
-		public string MostrarProgramador()
+		//SE CAMBIA EL NIVEL DE ACCESIBILIDAD DE PUBLICO A PROTEGIDO
+		protected override string Mostrar()
 		{
 			StringBuilder sb = new StringBuilder();
 
-			sb.Append(base.MostrarEmpleado());
+			sb.Append(base.Mostrar());
 			sb.Append(" - Categoría: ");
 			sb.Append(this.categoria.ToString());
 			
 			return sb.ToString();
 		}
 
-        #endregion
+		#endregion
 
-    }
+		#region Polimorfismo
+
+		public override string ToString()
+		{
+			return this.Mostrar();
+		}
+
+		#endregion
+
+	}
 }

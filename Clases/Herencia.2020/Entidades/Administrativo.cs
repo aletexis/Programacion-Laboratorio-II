@@ -37,15 +37,25 @@ namespace Entidades
 
 		#region Métodos
 
-		public string MostrarAdministrativo()
+		//SE CAMBIA EL NIVEL DE ACCESIBILIDAD DE PUBLICO A PROTEGIDO
+		protected override string Mostrar()
 		{
 			StringBuilder sb = new StringBuilder();
 
-			sb.Append(base.MostrarEmpleado());
+			sb.Append(base.Mostrar());
 			sb.Append(" - Simpatía: ");
 			sb.Append(this.simpatia.ToString());
 
 			return sb.ToString();
+		}
+
+		#endregion
+
+		#region Polimorfismo
+
+		public override string ToString()
+		{
+			return this.Mostrar();
 		}
 
 		#endregion

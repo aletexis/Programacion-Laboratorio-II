@@ -37,15 +37,25 @@ namespace Entidades
 
 		#region Métodos
 
-		public string MostrarCadete()
+		//SE CAMBIA EL NIVEL DE ACCESIBILIDAD DE PUBLICO A PROTEGIDO
+		protected override string Mostrar()
 		{
 			StringBuilder sb = new StringBuilder();
 
-			sb.Append(base.MostrarEmpleado());
+			sb.Append(base.Mostrar());
 			sb.Append(" - Sobrenomobre: ");
 			sb.Append(this.sobrenombre);
 
 			return sb.ToString();
+		}
+
+		#endregion
+
+		#region Polimorfismo
+
+		public override string ToString()
+		{
+			return this.Mostrar();
 		}
 
 		#endregion

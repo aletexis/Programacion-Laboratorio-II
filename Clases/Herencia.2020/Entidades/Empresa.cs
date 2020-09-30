@@ -103,7 +103,8 @@ namespace Entidades
             return total;
         }
 
-        public string Mostrar()
+        //SE CAMBIA EL NIVEL DE ACCESIBILIDAD DE PUBLICO A PROTEGIDO
+        protected string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
 
@@ -114,20 +115,9 @@ namespace Entidades
 
             foreach (Empleado item in this.empleados)
             {
-                if (item is Programador)
-                {
-                    sb.AppendLine(((Programador)item).MostrarProgramador());
-                }
+                //CAMBIO EL METODO MOSTRAR POR EL TOSTRING
+                sb.AppendLine(item.ToString());
 
-                if (item is Administrativo)
-                {
-                    sb.AppendLine(((Administrativo)item).MostrarAdministrativo());
-                }
-
-                if (item is Cadete)
-                {
-                    sb.AppendLine(((Cadete)item).MostrarCadete());
-                }
             }
 
             return sb.ToString();
@@ -199,6 +189,32 @@ namespace Entidades
             }
 
             return rta;
+        }
+
+        #endregion
+
+        #region Polimorfismo
+
+        public override string ToString()
+        {
+            return this.Mostrar();
+        }
+
+        public override bool Equals(object obj)
+        {
+            bool rta = false;
+
+            if (obj is Empleado)
+            {
+                rta = this == (Empleado)obj;
+            }
+
+            return rta;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
 
         #endregion

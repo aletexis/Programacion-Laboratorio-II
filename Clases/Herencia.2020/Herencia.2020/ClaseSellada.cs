@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Herencia
 {
-    class ClaseSellada : ClaseDerivada
+    sealed class ClaseSellada : ClaseDerivada
     {
         public ClaseSellada()
             : base(8)
