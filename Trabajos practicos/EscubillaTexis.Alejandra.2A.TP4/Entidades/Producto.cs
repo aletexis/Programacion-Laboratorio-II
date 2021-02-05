@@ -3,21 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Serialization;
 
 namespace Entidades
 {
-    [XmlInclude(typeof(Pincel))]
-    [XmlInclude(typeof(Pintura))]
-    [XmlInclude(typeof(Bastidor))]
-    public class Producto
+   public class Producto
     {
         #region Atributos
+
         private int codigo;
         private string nombre;
         public string marca;
         private int stock;
         private float precio;
+
         #endregion
 
         #region Propiedades
@@ -50,7 +48,7 @@ namespace Entidades
         /// Propiedad que permite obtener una marca.
         /// </summary>
         public virtual string Marca
-        {
+        { 
             get;
         }
         /// <summary>
@@ -99,10 +97,10 @@ namespace Entidades
         /// <summary>
         /// Constructor que inicializa el nombre, marca, stock y precio del producto.
         /// </summary>
-        /// <param name="nombre">El nombre del producto.</param>
-        /// <param name="marca">La marca del producto.</param>
-        /// <param name="stock">El stock del producto.</param>
-        /// <param name="precio">El precio del producto.</param>
+        /// <param name="nombre"></param>
+        /// <param name="marca"></param>
+        /// <param name="stock"></param>
+        /// <param name="precio"></param>
         public Producto(string nombre, string marca, int stock, float precio)
             : this()
         {
@@ -114,11 +112,10 @@ namespace Entidades
         /// <summary>
         /// Constructor que inicializa el codigo, nombre, marca, stock y precio del producto.
         /// </summary>
-        /// <param name="codigo">El codigo del producto.</param>
-        /// <param name="nombre">El nombre del producto.</param>
-        /// <param name="marca">La marca del producto.</param>
-        /// <param name="stock">El stock del producto.</param>
-        /// <param name="precio">El precio del producto.</param>
+        /// <param name="nombre"></param>
+        /// <param name="marca"></param>
+        /// <param name="stock"></param>
+        /// <param name="precio"></param>
         public Producto(int codigo, string nombre, string marca, int stock, float precio)
             : this(nombre, marca, stock, precio)
         {
@@ -127,83 +124,30 @@ namespace Entidades
         #endregion
 
         #region Metodos
-
+       
         /// <summary>
         /// Muestra la informacion del producto.
         /// </summary>
-        /// <returns>Devuelve la informacion en string.</returns>
+        /// <returns></returns>
         protected virtual string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("\tCodigo: " + this.codigo);
-            //sb.AppendLine("\tStock: " + this.stock);
-            sb.AppendLine("\tPrecio: $" + this.precio);
+            sb.AppendLine("\tStock: " + this.stock);
+            sb.AppendLine("\tPrecio: " + this.precio);
             sb.AppendLine("\tNombre: " + this.nombre);
             sb.AppendLine("\tMarca: " + this.marca);
-
+           
             return sb.ToString();
         }
 
         /// <summary>
         /// Hace publica la informacion del producto.
         /// </summary>
-        /// <returns>Devuelve la informacion en string.</returns>
+        /// <returns></returns>
         public override string ToString()
         {
             return this.Mostrar();
-        }
-
-        /// <summary>
-        /// Verifica que un objeto sea de tipo producto.
-        /// </summary>
-        /// <param name="obj">El objeto a comparar.</param>
-        /// <returns>Devuelve True si es. Caso contrario, devuelve false.</returns>
-        public override bool Equals(object obj)
-        {
-            bool ret = false;
-            if (obj is Producto)
-            {
-                ret = this == (Producto)obj;
-            }
-
-            return ret;
-        }
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
-        }
-
-        #endregion
-
-        #region Sobrecargas
-        /// <summary>
-        /// Dos productos son iguales si tienen el mismo codigo.
-        /// </summary>
-        /// <param name="producto1">El primer producto a comparar.</param>
-        /// <param name="producto2">El segundo producto a comparar.</param>
-        /// <returns>Devuelve True si son iguales, false si no lo son.</returns>
-        public static bool operator ==(Producto producto1, Producto producto2)
-        {
-            bool ret = false;
-            if ((object)producto1 != null && (object)producto2 != null)
-            {
-                if (producto1.codigo == producto2.codigo)
-                {
-                    ret = true;
-                }
-            }
-            return ret;
-        }
-
-        /// <summary>
-        /// Dos productos son distintos si tienen el mismo codigo.
-        /// </summary>
-        /// <param name="producto1">El primer producto a comparar.</param>
-        /// <param name="producto2">El segundo producto a comparar.</param>
-        /// <returns>Devuelve True si son distintos, false si no lo son.</returns>
-        public static bool operator !=(Producto producto1, Producto producto2)
-        {
-            return !(producto1 == producto2);
         }
         #endregion
     }

@@ -4,15 +4,3 @@ C:\Users\Ale\source\repos\EscubillaTexis.Alejandra.2A.TP4\Excepciones\obj\Debug\
 C:\Users\Ale\source\repos\EscubillaTexis.Alejandra.2A.TP4\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
 C:\Users\Ale\source\repos\EscubillaTexis.Alejandra.2A.TP4\Excepciones\obj\Debug\Excepciones.dll
 C:\Users\Ale\source\repos\EscubillaTexis.Alejandra.2A.TP4\Excepciones\obj\Debug\Excepciones.pdb
-C:\Users\Ale\Desktop\tp_laboratorio_2\RecuperatoriosTP\EscubillaTexis.Alejandra.2A.TP4\Excepciones\bin\Debug\Excepciones.dll
-C:\Users\Ale\Desktop\tp_laboratorio_2\RecuperatoriosTP\EscubillaTexis.Alejandra.2A.TP4\Excepciones\bin\Debug\Excepciones.pdb
-C:\Users\Ale\Desktop\tp_laboratorio_2\RecuperatoriosTP\EscubillaTexis.Alejandra.2A.TP4\Excepciones\obj\Debug\Excepciones.csprojAssemblyReference.cache
-C:\Users\Ale\Desktop\tp_laboratorio_2\RecuperatoriosTP\EscubillaTexis.Alejandra.2A.TP4\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
-C:\Users\Ale\Desktop\tp_laboratorio_2\RecuperatoriosTP\EscubillaTexis.Alejandra.2A.TP4\Excepciones\obj\Debug\Excepciones.dll
-C:\Users\Ale\Desktop\tp_laboratorio_2\RecuperatoriosTP\EscubillaTexis.Alejandra.2A.TP4\Excepciones\obj\Debug\Excepciones.pdb
-C:\Users\Ale\Downloads\tp_laboratorio_2-master(2)\tp_laboratorio_2-master\RecuperatoriosTP\EscubillaTexis.Alejandra.2A.TP4\Excepciones\bin\Debug\Excepciones.dll
-C:\Users\Ale\Downloads\tp_laboratorio_2-master(2)\tp_laboratorio_2-master\RecuperatoriosTP\EscubillaTexis.Alejandra.2A.TP4\Excepciones\bin\Debug\Excepciones.pdb
-C:\Users\Ale\Downloads\tp_laboratorio_2-master(2)\tp_laboratorio_2-master\RecuperatoriosTP\EscubillaTexis.Alejandra.2A.TP4\Excepciones\obj\Debug\Excepciones.csprojAssemblyReference.cache
-C:\Users\Ale\Downloads\tp_laboratorio_2-master(2)\tp_laboratorio_2-master\RecuperatoriosTP\EscubillaTexis.Alejandra.2A.TP4\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
-C:\Users\Ale\Downloads\tp_laboratorio_2-master(2)\tp_laboratorio_2-master\RecuperatoriosTP\EscubillaTexis.Alejandra.2A.TP4\Excepciones\obj\Debug\Excepciones.dll
-C:\Users\Ale\Downloads\tp_laboratorio_2-master(2)\tp_laboratorio_2-master\RecuperatoriosTP\EscubillaTexis.Alejandra.2A.TP4\Excepciones\obj\Debug\Excepciones.pdb

@@ -41,18 +41,17 @@ namespace Entidades
         /// Constructor por defecto.
         /// </summary>
         public Bastidor()
-            : base()
         {
         }
         /// <summary>
         /// Constructor que inicializa el codigo, nombre, marca, stock, precio y tipo de un bastidor.
         /// </summary>
-        /// <param name="codigo">El codigo del bastidor.</param>
-        /// <param name="nombre">El nombre del bastidor.</param>
-        /// <param name="marca">La marca del bastidor.</param>
-        /// <param name="stock">El stock del bastidor.</param>
-        /// <param name="precio">El precio del bastidor.</param>
-        /// <param name="tamaño">El tamaño del bastidor.</param>
+        /// <param name="codigo"></param>
+        /// <param name="nombre"></param>
+        /// <param name="marca"></param>
+        /// <param name="stock"></param>
+        /// <param name="precio"></param>
+        /// <param name="tamaño"></param>
         public Bastidor(int codigo, string nombre, string marca, int stock, float precio, ETamaño tamaño)
             : base(codigo, nombre, marca, stock, precio)
         {
@@ -64,7 +63,7 @@ namespace Entidades
         /// <summary>
         /// Muestra la informacion del bastidor.
         /// </summary>
-        /// <returns>Devuelve la informacion en string.</returns>
+        /// <returns></returns>
         protected override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
@@ -74,61 +73,16 @@ namespace Entidades
 
             return sb.ToString();
         }
-
+        
         /// <summary>
-        /// Hace publica la informacion del bastidor.
+        /// Hace publica la informacion del bastidor
         /// </summary>
-        /// <returns>Devuelve la informacion en string.</returns>
+        /// <returns></returns>
         public override string ToString()
         {
             return this.Mostrar();
         }
 
-        /// <summary>
-        /// Verifica si un objeto es de tipo bastidor.
-        /// </summary>
-        /// <param name="obj">El objeto a comparar.</param>
-        /// <returns>Devuelve True si son iguales. Caso contrario devuelve False.</returns>
-        public override bool Equals(object obj)
-        {
-            bool ret = false;
-            if (obj is Bastidor)
-            {
-                ret = this == (Bastidor)obj;
-            }
-
-            return ret;
-        }
-
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
-        }
-
-        #endregion
-
-        #region Sobrecargas
-        /// <summary>
-        /// Verifica que dos bastidores sean iguales.
-        /// </summary>
-        /// <param name="bastidor1">Primer bastidor a comparar.</param>
-        /// <param name="bastidor2">Segundo bastidor a comparar.</param>
-        /// <returns>Devuelve True si son iguales. Caso contrario, devuelve False.</returns>
-        public static bool operator ==(Bastidor bastidor1, Bastidor bastidor2)
-        {
-            return (Producto)bastidor1 == (Producto)bastidor2;
-        }
-
-        /// <summary>
-        /// Verifica que dos bastidores sean distintos.
-        /// </summary>
-        /// <param name="bastidor1">Primer bastidor a comparar.</param>
-        /// <param name="bastidor2">Segundo bastidor a comparar.</param>
-        /// <returns>Devuelve True si son distintos. Caso contrario, devuelve False.</returns>
-        public static bool operator !=(Bastidor bastidor1, Bastidor bastidor2)
-        {
-            return !(bastidor1 == bastidor2);
-        }
         #endregion
     }
 }

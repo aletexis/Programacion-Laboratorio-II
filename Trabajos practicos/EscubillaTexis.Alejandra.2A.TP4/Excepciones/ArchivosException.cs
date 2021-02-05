@@ -9,28 +9,11 @@ namespace Excepciones
     public class ArchivosException : Exception
     {
         /// <summary>
-        /// Constructor por defecto.
+        /// Constructor de la excepcion de archivos.
         /// </summary>
-        public ArchivosException()
-            : base("Archivo inexistente.")
-        {
-        }
-
-        /// <summary>
-        /// Constructor parametrizado que inicializa un atributo.
-        /// <param name="mensaje">El mensaje a mostrar</param>
-        /// </summary>
-        public ArchivosException(string mensaje)
-            : base(mensaje)
-        {
-        }
-
-        /// <summary>
-        /// Constructor parametrizado que inicializa un atributo.
-        /// <param name="innerException">Excepcion</param>
-        /// </summary>
+        /// <param name="innerException"></param>
         public ArchivosException(Exception innerException)
-            : base("Archivo Inexistente", innerException)
+            : base(innerException.Message)
         {
         }
     }

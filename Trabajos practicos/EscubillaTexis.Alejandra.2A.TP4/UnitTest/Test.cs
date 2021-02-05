@@ -2,16 +2,12 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Entidades;
 using Excepciones;
-using Archivos;
 
 namespace UnitTest
 {
     [TestClass]
     public class Test
     {
-        /// <summary>
-        /// Método de testeo que espera una excepción al ingresar un producto que ya existe.
-        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ProductoRepetidoException))]
         public void TestProductoRepetidoException()
@@ -24,32 +20,6 @@ namespace UnitTest
             Assert.Fail();
         }
 
-        /// <summary>
-        /// Método de testeo que espera una excepción al abrir un archivo que no existe.
-        /// </summary>
-        [TestMethod]
-        [ExpectedException(typeof(ArchivosException))]
-        public void TestArchivos()
-        {
-            Texto archivoTest = new Texto();
-            string path = AppDomain.CurrentDomain.BaseDirectory + "abc.txt";
-            archivoTest.Leer(path, out string datosLeidos);
-        }
-
-        /// <summary>
-        /// Método de testeo que serializa la artística.
-        /// </summary>
-        [TestMethod]
-        public void TestSerializarXml()
-        {
-            Artistica artistica = new Artistica();
-
-            Assert.IsTrue(Artistica.Guardar("Artistica.xml", artistica));
-        }
-
-        /// <summary>
-        /// Método de testeo que verifica que un atributo del producto pincel sea de tipo float.
-        /// </summary>
         [TestMethod]
         public void TestPrecioFloat()
         {

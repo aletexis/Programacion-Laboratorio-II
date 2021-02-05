@@ -3,35 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Archivos;
+using System.IO;
 using Excepciones;
+using Archivos;
 
 namespace Entidades
 {
     public class Artistica
     {
-        #region Atributos
+        private List<Producto> productos;
+        private List<Venta> ventas;
         private int capacidadDeposito;
-        public List<Producto> productos;
-        public List<Venta> ventas;
-        #endregion
 
         #region Propiedades
-        /// <summary>
-        /// Propiedad que permite obtener o asignar la capacidad del deposito.
-        /// </summary>
-        public int CapacidadDeposito
-        {
-            get
-            {
-                return this.capacidadDeposito;
-            }
-            set
-            {
-                this.capacidadDeposito = value;
-            }
-        }
-
         /// <summary>
         /// Propiedad que permite obtener o asignar productos.
         /// </summary>
@@ -61,6 +45,21 @@ namespace Entidades
                 this.ventas = value;
             }
         }
+
+        /// <summary>
+        /// Propiedad que permite obtener o asignar la capacidad del deposito.
+        /// </summary>
+        public int CapacidadDeposito
+        { 
+            get 
+            { 
+                return this.capacidadDeposito; 
+            } 
+            set 
+            { 
+                this.capacidadDeposito = value; 
+            } 
+        }
         #endregion
 
         #region Constructores
@@ -78,30 +77,41 @@ namespace Entidades
         /// <summary>
         /// Constructor que inicializa una capacidad de deposito determinada.
         /// </summary>
-        /// <param name="capacidadDeposito">La capacidad del deposito recibida.</param>
+        /// <param name="capacidadDeposito"></param>
         public Artistica(int capacidadDeposito)
             : this()
         {
             this.capacidadDeposito = capacidadDeposito;
         }
+
         #endregion
 
         #region Metodos
 
         /// <summary>
+        /// Realiza la venta de un producto agregandolo a la lista de ventas.
+        /// </summary>
+        /// <param name="producto"></param>
+        /// <param name="cantidad"></param>
+        public void Vender(Producto producto, int cantidad)
+        {
+            Venta nuevaVenta = new Venta(producto, cantidad);
+            this.ventas.Add(nuevaVenta);
+        }
+
+        /// <summary>
         /// Muestra un listado de ventas realizadas.
         /// </summary>
-        /// <returns>Devuelve el listado de ventas en string.</returns>
+        /// <returns></returns>
         public string MostrarVentas()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("\t**************************************\n");
-            sb.Append("\t*** VENTAS ***************************\n");
-            sb.Append("\t**************************************\n");
+            sb.AppendLine("\t*** VENTAS ***************************\n");
             foreach (Venta v in Ventas)
             {
                 sb.AppendLine(v.ToString());
             }
+            sb.AppendLine("\t**************************************");
 
             return sb.ToString();
         }
@@ -109,101 +119,58 @@ namespace Entidades
         /// <summary>
         /// Muestra un listado de productos.
         /// </summary>
-        /// <returns>Devuelve el listado de productos en string.</returns>
-        private string MostrarProductos()
+        /// <returns></returns>
+        public string MostrarProductos()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("\t**************************************\n");
-            sb.Append("\t*** PRODUCTOS ************************\n");
-            sb.Append("\t**************************************\n");
+            sb.AppendLine("\t--- PRODUCTOS ------------------------\n");
             foreach (Producto p in Productos)
             {
                 sb.AppendLine(p.ToString());
             }
+            sb.AppendLine("\t------------------------------------");
 
             return sb.ToString();
-        }
- 
-        /// <summary>
-        /// Hace publicos los datos de la artistica, detallando los productos,
-        /// ventas y la capacidad del deposito.
-        /// </summary>
-        /// <returns>Devuelve los datos en formato string.</returns>
-        public override string ToString()
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.Append("\n\t=======================================\n");
-            sb.Append("\t============== ARTISTICA ==============\n");
-            sb.Append("\t=======================================\n");
-            sb.AppendFormat("\n\tCapacidad del deposito: {0}\n\n", this.capacidadDeposito);
-            sb.AppendLine(MostrarProductos());
-            return sb.ToString();
-        }
-
-        /// <summary>
-        /// Vende un producto de la artistica.
-        /// </summary>
-        /// <param name="artistica">La artistica de la cual se va a vender el producto.</param>
-        /// <param name="producto">El producto a vender.</param>
-        public void Vender(Artistica artistica, Producto producto)
-        {
-            artistica -= producto;
-            Console.WriteLine("Se realizo la venta exitosamente.");
         }
 
         /// <summary>
         /// Guarda la informacion del negocio en un archivo xml.
         /// </summary>
-        /// <param name="path">La ruta del archivo.</param>
-        /// <param name="artistica">El negocio a guardar.</param>
-        /// <returns>Devuelve True si se pudo guardar exitosamente, False si no se pudo.</returns>
-        public static bool Guardar(string path, Artistica artistica)
+        /// <param name="artistica"></param>
+        /// <returns></returns>
+        public static bool Guardar(Artistica artistica)
         {
-            bool retorno = false;
-            Xml<Artistica> xml = new Xml<Artistica>();
-            retorno = xml.Guardar(path, artistica);
-            return retorno;
+            try
+            {
+                string path = System.IO.Directory.GetCurrentDirectory()
+                    + @"\ArchivosGuardados";
+                System.IO.Directory.CreateDirectory(path);
+                Xml<Artistica> archivo = new Xml<Artistica>();
+                return archivo.Guardar((path + @"\Artistica.xml"), artistica);
+            }
+            catch (Exception e)
+            {
+                throw new ArchivosException(e);
+            }
         }
-
         /// <summary>
         /// Permite leer la informacion del negocio desde un archivo xml.
         /// </summary>
-        /// <returns>Devuelve el negocio con los datos cargados si se pudo leer exitosamente. 
-        /// Caso contrario se devuelve el negocio vacio.</returns>
-        public static string Leer()
+        /// <returns></returns>
+        public static Artistica Leer()
         {
-            Artistica artistica = new Artistica();
-            Xml<Artistica> xml = new Xml<Artistica>();
             try
             {
-                xml.Leer("Artistica.xml", out artistica);
+                Artistica artistica = new Artistica();
+                Xml<Artistica> archivo = new Xml<Artistica>();
+                archivo.Leer((System.IO.Directory.GetCurrentDirectory()
+                    + @"\ArchivosGuardados\Artistica.xml"), out artistica);
+                return artistica;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                Console.WriteLine(e);
+                throw new ArchivosException(e);
             }
-            return artistica.ToString();
-        }
-
-        /// <summary>
-        /// Verifica si un objeto es de tipo artistica.
-        /// </summary>
-        /// <param name="obj">El objeto a comparar.</param>
-        /// <returns>Devuelve True si son iguales. Caso contrario devuelve False.</returns>
-        public override bool Equals(object obj)
-        {
-            bool ret = false;
-            if (obj is Artistica)
-            {
-                ret = this == (Artistica)obj;
-            }
-
-            return ret;
-        }
-
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
         }
 
         #endregion
@@ -211,49 +178,46 @@ namespace Entidades
         #region Sobrecargas
 
         /// <summary>
-        /// Una artistica es igual a un producto si el producto esta en la lista de
-        /// productos de la artistica.
+        /// Sobrecarga del operador ==. Dos productos son iguales si tienen el mismo codigo.
         /// </summary>
-        /// <param name="artistica">La artistica a comparar.</param>
-        /// <param name="producto">El producto a comparar.</param>
-        /// <returns>Devuelve True si son iguales. Caso contrario devuelve False.</returns>
+        /// <param name="artistica"></param>
+        /// <param name="producto"></param>
+        /// <returns>Retorna true si son iguales, false si no lo son.</returns>
         public static bool operator ==(Artistica artistica, Producto producto)
         {
-            bool retorno = false;
-            if ((object)artistica != null && (object)producto != null)
+            foreach (Producto p in artistica.productos)
             {
-                if (artistica.productos.Contains(producto))
+                if (p.Codigo == producto.Codigo)
                 {
-                    retorno = true;
+                    return true;
                 }
             }
-            return retorno;
+            return false;
         }
-
         /// <summary>
-        /// Una artistica es distinta a un producto si el producto no esta en la lista de
-        /// productos de la artistica.
+        /// Sobrecarga del operador !=. Dos productos son distintos si no tienen el mismo codigo.
         /// </summary>
-        /// <param name="artistica">La artistica a comparar.</param>
-        /// <param name="producto">El producto a comparar.</param>
-        /// <returns>Devuelve True si son distintos. Caso contrario devuelve False.</returns>
+        /// <param name="artistica"></param>
+        /// <param name="producto"></param>
+        /// <returns></returns>
         public static bool operator !=(Artistica artistica, Producto producto)
         {
             return !(artistica == producto);
         }
+        #endregion
 
         /// <summary>
         /// Sobrecarga del operador +. Se agrega un producto al negocio si no esta repetido
-        /// y si hay espacio disponible. Caso contrario se lanzan las excepciones correspondientes.
+        /// y si hay espacio disponible.
         /// </summary>
-        /// <param name="artistica">El negocio al cual se va a agregar el producto.</param>
-        /// <param name="producto">El producto a agregar.</param>
-        /// <returns>Devuelve la artistica con el producto agregado. Caso contrario, no se hacen cambios.</returns>
+        /// <param name="artistica"></param>
+        /// <param name="producto"></param>
+        /// <returns></returns>
         public static Artistica operator +(Artistica artistica, Producto producto)
         {
             if (artistica != producto)
             {
-                if (artistica.capacidadDeposito > artistica.Productos.Count)
+                if (artistica.capacidadDeposito > artistica.productos.Count)
                 {
                     artistica.productos.Add(producto);
                 }
@@ -270,12 +234,11 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Sobrecarga del operador -. Se quita un producto del negocio si se encuentra en él.
-        /// Caso contrario, se lanza la excepcion correspondiente.
+        /// Sobrecarga del operador -. Se saca un producto del negocio si se encuentra en él.
         /// </summary>
-        /// <param name="artistica">El negocio al cual se le va a quitar el producto.</param>
-        /// <param name="producto">El producto a quitar.</param>
-        /// <returns>Devuelve la artistica con el producto quitado. Caso contrario, no se hacen cambios.</returns>
+        /// <param name="artistica"></param>
+        /// <param name="producto"></param>
+        /// <returns></returns>
         public static Artistica operator -(Artistica artistica, Producto producto)
         {
             if (artistica == producto)
@@ -288,6 +251,5 @@ namespace Entidades
             }
             return artistica;
         }
-        #endregion
     }
 }

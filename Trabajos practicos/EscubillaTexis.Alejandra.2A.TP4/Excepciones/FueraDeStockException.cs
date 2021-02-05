@@ -9,22 +9,11 @@ namespace Excepciones
     public class FueraDeStockException : Exception
     {
         /// <summary>
-        /// Constructor por defecto.
+        /// Constructor de la excepcion de producto fuera de stock.
         /// </summary>
         public FueraDeStockException()
-            : base("No hay stock del producto seleccionado.")
+            : base("\nEl producto esta fuera de stock.")
         {
         }
-
-        /// <summary>
-        /// Constructor parametrizado que inicializa un atributo.
-        /// <param name="mensaje">El mensaje a mostrar</param>
-        /// </summary>
-        public FueraDeStockException(string mensaje)
-            : base(mensaje)
-        {
-        }
-
     }
 }
-

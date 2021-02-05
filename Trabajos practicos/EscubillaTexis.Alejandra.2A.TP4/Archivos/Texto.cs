@@ -1,11 +1,16 @@
-﻿using Excepciones;
-using System;
-using System.IO;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+using System.Data.SqlClient;
+using Archivos;
+using Excepciones;
 
 namespace Archivos
 {
-    public class Texto : IArchivos<string>
+    public class Texto : IArchivo<string>
     {
         /// <summary>
         /// Guarda los datos en un archivo de texto.
@@ -15,20 +20,23 @@ namespace Archivos
         /// <returns>Retorna True si la ruta es valida. Caso contrario, lanza una excepcion.</returns>
         public bool Guardar(string archivo, string datos)
         {
-            bool ret = false;
+            bool retorno = false;
+
             try
             {
-                using (StreamWriter sw = new StreamWriter(archivo, true, Encoding.UTF8))
+                using (StreamWriter sw = new StreamWriter(archivo))
                 {
                     sw.WriteLine(datos);
-                    ret = true;
+                    retorno = true;
                 }
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw new ArchivosException("El archivo no se pudo crear.");
+                Console.WriteLine("\nNo se pudo guardar el archivo de texto.");
+                throw new ArchivosException(e);
             }
-            return ret;
+
+            return retorno;
         }
 
         /// <summary>
@@ -39,21 +47,23 @@ namespace Archivos
         /// <returns>Retorna True si la ruta es valida. Caso contrario, lanza una excepcion.</returns>
         public bool Leer(string archivo, out string datos)
         {
-            bool ret = false;
+            bool retorno = false;
+
             try
             {
-                using (StreamReader sr = new StreamReader(archivo, Encoding.UTF8))
+                using (StreamReader sr = new StreamReader(archivo))
                 {
                     datos = sr.ReadToEnd();
-                    ret = true;
+                    retorno = true;
                 }
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw new ArchivosException("No se pudo abrir el archivo.");
+                Console.WriteLine("\nNo se pudo leer el archivo de texto.");
+                throw new ArchivosException(e);
             }
-            return ret;
+
+            return retorno;
         }
     }
 }
-

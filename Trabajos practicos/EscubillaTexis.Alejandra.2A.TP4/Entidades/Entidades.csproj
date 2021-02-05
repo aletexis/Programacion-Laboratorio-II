@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F2613BE4-AF75-4FE0-86C6-6525C4C7C34A}</ProjectGuid>
+    <ProjectGuid>{26365524-B3CF-44E8-BB6A-2BFFC12E57E4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Entidades</RootNamespace>
@@ -52,11 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Archivos\Archivos.csproj">
-      <Project>{938113df-b06e-4e8d-8d10-9e366bffd1aa}</Project>
+      <Project>{e0bee577-b18b-4991-a0c7-4236c7cf75db}</Project>
       <Name>Archivos</Name>
     </ProjectReference>
     <ProjectReference Include="..\Excepciones\Excepciones.csproj">
-      <Project>{1fbbed73-aced-44a1-b4ca-c5a454fe4853}</Project>
+      <Project>{4c906244-1705-4525-a0fa-05cfa11ef578}</Project>
       <Name>Excepciones</Name>
     </ProjectReference>
   </ItemGroup>

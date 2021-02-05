@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1FBBED73-ACED-44A1-B4CA-C5A454FE4853}</ProjectGuid>
+    <ProjectGuid>{4C906244-1705-4525-A0FA-05CFA11EF578}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Excepciones</RootNamespace>
@@ -33,8 +33,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArchivosException.cs" />
+    <Compile Include="BaseDatosException.cs" />
     <Compile Include="DepositoLlenoException.cs" />
     <Compile Include="FueraDeStockException.cs" />
     <Compile Include="ProductoRepetidoException.cs" />

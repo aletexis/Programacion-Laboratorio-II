@@ -9,27 +9,10 @@ namespace Excepciones
     public class ProductoRepetidoException : Exception
     {
         /// <summary>
-        /// Constructor por defecto.
+        /// Constructor de la excepcion de producto repetido.
         /// </summary>
         public ProductoRepetidoException()
-            : base("El producto ya esta en el deposito de la Artistica.")
-        {
-        }
-        /// <summary>
-        /// Constructor parametrizado que inicializa un atributo.
-        /// <param name="mensaje">El mensaje a mostrar</param>
-        /// </summary>
-        public ProductoRepetidoException(string mensaje)
-            : base(mensaje)
-        {
-        }
-
-        /// <summary>
-        /// Constructor parametrizado que inicializa un atributo.
-        /// <param name="innerException"></param>
-        /// </summary>
-        public ProductoRepetidoException(Exception innerException)
-            : base("El producto ya esta en el deposito de la Artistica.", innerException)
+            : base("\nProducto repetido.")
         {
         }
     }

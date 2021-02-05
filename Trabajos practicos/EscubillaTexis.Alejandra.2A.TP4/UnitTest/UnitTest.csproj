@@ -56,10 +56,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Archivos\Archivos.csproj">
-      <Project>{938113df-b06e-4e8d-8d10-9e366bffd1aa}</Project>
-      <Name>Archivos</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{26365524-b3cf-44e8-bb6a-2bffc12e57e4}</Project>
       <Name>Entidades</Name>

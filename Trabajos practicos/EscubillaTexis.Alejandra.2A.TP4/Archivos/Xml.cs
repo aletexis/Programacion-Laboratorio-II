@@ -1,13 +1,17 @@
-﻿using Excepciones;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using System.Xml;
+using System.Threading.Tasks;
 using System.Xml.Serialization;
+using System.IO;
+using Excepciones;
 
 namespace Archivos
 {
-    public class Xml<T> : IArchivos<T>
+    public class Xml<T> : IArchivo<T> where T : class
     {
+
         /// <summary>
         /// Guarda datos de tipo T en un archivo .xml.
         /// </summary>
@@ -16,22 +20,22 @@ namespace Archivos
         /// <returns>Retorna True si la ruta es valida. Caso contrario, False y lanza una excepcion.</returns>
         public bool Guardar(string archivo, T datos)
         {
-            bool ret = false;
+            bool retorno;
             try
             {
-                using (XmlTextWriter tw = new XmlTextWriter(archivo, Encoding.UTF8))
-                {
-                    XmlSerializer ser = new XmlSerializer(typeof(T));
-                    ser.Serialize(tw, datos);
-                    ret = true;
-                }
+                XmlSerializer xmls = new XmlSerializer(typeof(T));
+                TextWriter tw = new StreamWriter(archivo);
+                xmls.Serialize(tw, datos);
+                retorno = true;
+                tw.Close();
             }
-
-            catch (Exception)
+            catch (Exception e)
             {
-                throw new ArchivosException("Archivo no generado");
+                retorno = false;
+                Console.WriteLine("\nNo se pudo guardar el archivo xml.");
+                throw new ArchivosException(e);
             }
-            return ret;
+            return retorno;
         }
 
         /// <summary>
@@ -42,21 +46,24 @@ namespace Archivos
         /// <returns>Retorna True si la ruta es valida. Caso contrario, False y lanza una excepcion.</returns>
         public bool Leer(string archivo, out T datos)
         {
-            bool ret = false;
+            bool retorno;
+            datos = default(T);
             try
             {
-                using (XmlTextReader tr = new XmlTextReader(archivo))
-                {
-                    XmlSerializer ser = new XmlSerializer(typeof(T));
-                    datos = (T)ser.Deserialize(tr);
-                    ret = true;
-                }
+                XmlSerializer xmls = new XmlSerializer(typeof(T));
+                StreamReader sr = new StreamReader(archivo);
+                datos = (T)xmls.Deserialize(sr);
+                retorno = true;
+                sr.Close();
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw new ArchivosException();
+                retorno = false;
+                Console.WriteLine("\nNo se pudo leer el archivo xml.");
+                throw new ArchivosException(e);
             }
-            return ret;
+
+            return retorno;
         }
     }
 }

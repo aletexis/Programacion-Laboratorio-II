@@ -9,19 +9,10 @@ namespace Excepciones
     public class DepositoLlenoException : Exception
     {
         /// <summary>
-        /// Constructor por defecto.
+        /// Constructor de la excepcion de deposito lleno.
         /// </summary>
         public DepositoLlenoException()
-           : base("Deposito lleno")
-        {
-        }
-
-        /// <summary>
-        /// Constructor parametrizado que inicializa un atributo.
-        /// <param name="mensaje">El mensaje a mostrar</param>
-        /// </summary>
-        public DepositoLlenoException(string mensaje)
-           : base(mensaje)
+           : base("\nEl deposito está lleno.")
         {
         }
     }

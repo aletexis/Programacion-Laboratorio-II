@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E0630BB1-37A4-4DBA-B765-4A84FE781029}</ProjectGuid>
+    <ProjectGuid>{F83E2768-6219-4355-AF59-96D0CFA85A7B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Test</RootNamespace>
     <AssemblyName>Test</AssemblyName>
@@ -50,16 +50,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Archivos\Archivos.csproj">
-      <Project>{938113df-b06e-4e8d-8d10-9e366bffd1aa}</Project>
-      <Name>Archivos</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
-      <Project>{f2613be4-af75-4fe0-86c6-6525c4c7c34a}</Project>
+      <Project>{26365524-b3cf-44e8-bb6a-2bffc12e57e4}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
     <ProjectReference Include="..\Excepciones\Excepciones.csproj">
-      <Project>{1fbbed73-aced-44a1-b4ca-c5a454fe4853}</Project>
+      <Project>{4c906244-1705-4525-a0fa-05cfa11ef578}</Project>
       <Name>Excepciones</Name>
     </ProjectReference>
   </ItemGroup>
