@@ -2,12 +2,16 @@
  * Luego calcular y mostrar: el valor máximo, el valor mínimo y el promedio.*/
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Ejercicio01
 {
-    class MainClass
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.Title = "Ejercicio01";
             int number;
@@ -17,13 +21,13 @@ namespace Ejercicio01
             float average;
 
 
-            for (int i=0; i<5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 Console.Write("Ingrese un numero: ");
                 number = int.Parse(Console.ReadLine());
                 sum += number;
 
-                if(number > max)
+                if (number > max)
                 {
                     max = number;
                 }
@@ -31,7 +35,7 @@ namespace Ejercicio01
                 {
                     min = number;
                 }
-                
+
             }
             average = (sum / 5);
 

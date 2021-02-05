@@ -3,45 +3,50 @@ por consola.
 Nota: Utilizar estructuras repetitivas, selectivas y la función módulo (%).*/
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Ejercicio03
 {
-    class MainClass
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.Title = "Ejercicio 03";
-            int enteredNumber;
+            int numeroIngresado;
             int primo;
-            int number;
+            int numero;
             int divisor;
-            int accumulator = 0;
+            int acumulador = 0;
 
             Console.Write("Ingrese un numero: ");
-            enteredNumber = int.Parse(Console.ReadLine());
+            numeroIngresado = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("{1}Los numeros primos hasta {0} son: ", enteredNumber, Environment.NewLine);
-            for (number = 1; number <= enteredNumber; number++)
+            Console.WriteLine("{1}Los numeros primos hasta {0} son: ", numeroIngresado, Environment.NewLine);
+            for (numero = 1; numero <= numeroIngresado; numero++)
             {
-                accumulator = 0;
-                for (divisor=1; divisor<= number; divisor++)
+                acumulador = 0;
+                for (divisor = 1; divisor <= numero; divisor++)
                 {
-                    if (number % divisor == 0)
+                    if (numero % divisor == 0)
                     {
-                        accumulator = accumulator + divisor;
+                        acumulador = acumulador + divisor;
                     }
                     else
                     {
-                        accumulator = accumulator + 0;
+                        acumulador = acumulador + 0;
                     }
                 }
-                if (accumulator == number + 1)
+                if (acumulador == numero + 1)
                 {
-                    primo = number;
-                    Console.Write(" {0} ",primo);
+                    primo = numero;
+                    Console.Write(" {0} ", primo);
                 }
-
             }
+
+            Console.ReadKey(true);
         }
     }
 }

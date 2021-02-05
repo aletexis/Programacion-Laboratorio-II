@@ -1,26 +1,36 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 
-// Information about this assembly is defined by the following attributes. 
-// Change them to the values specific to your project.
-
+// La información general de un ensamblado se controla mediante el siguiente 
+// conjunto de atributos. Cambie estos valores de atributo para modificar la información
+// asociada a un ensamblado.
 [assembly: AssemblyTitle("Ejercicio10")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyProduct("Ejercicio10")]
+[assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-// The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
-// The form "{Major}.{Minor}.*" will automatically update the build and revision,
-// and "{Major}.{Minor}.{Build}.*" will update just the revision.
+// Si establece ComVisible en false, los tipos de este ensamblado no estarán visibles 
+// para los componentes COM.  Si es necesario obtener acceso a un tipo en este ensamblado desde 
+// COM, establezca el atributo ComVisible en true en este tipo.
+[assembly: ComVisible(false)]
 
-[assembly: AssemblyVersion("1.0.*")]
+// El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
+[assembly: Guid("b13804e7-dde1-4f55-a402-1df943d1d5fa")]
 
-// The following attributes are used to specify the signing key for the assembly, 
-// if desired. See the Mono documentation for more information about signing.
-
-//[assembly: AssemblyDelaySign(false)]
-//[assembly: AssemblyKeyFile("")]
+// La información de versión de un ensamblado consta de los cuatro valores siguientes:
+//
+//      Versión principal
+//      Versión secundaria
+//      Número de compilación
+//      Revisión
+//
+// Puede especificar todos los valores o usar los valores predeterminados de número de compilación y de revisión
+// utilizando el carácter "*", como se muestra a continuación:
+// [assembly: AssemblyVersion("1.0.*")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]

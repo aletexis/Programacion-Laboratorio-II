@@ -4,39 +4,61 @@ con DateTime.Now).
 Nota: Utilizar estructuras selectivas. Tener en cuenta los años bisiestos.*/
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Ejercicio07
 {
-    class MainClass
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Console.Title = "Ejercicio07";
+            Console.Title = "Ejercicio 07";
+
             int day;
             int month;
             int year;
-            int daysLived = 0;
-            DateTime actualDate = DateTime.Now;
-            DateTime birthDate;
+            int daysLived;
+            DateTime birthday;
+            DateTime actualDate = DateTime.Today;
 
 
-            Console.Write("Ingrese el dia de su nacimiento: ");
+            Console.Write("Ingrese dia de nacimiento: ");
             day = int.Parse(Console.ReadLine());
-            Console.Write("Ingrese el mes de su nacimiento: ");
+            while (day < 0 || day > 31)
+            {
+                Console.Write("Ingrese dia de nacimiento: ");
+                day = int.Parse(Console.ReadLine());
+            }
+
+            Console.Write("Ingrese mes de nacimiento: ");
             month = int.Parse(Console.ReadLine());
-            Console.Write("Ingrese el año de su nacimiento: ");
+            while (month < 0 || month > 12)
+            {
+                Console.Write("Ingrese mes de nacimiento: ");
+                month = int.Parse(Console.ReadLine());
+            }
+
+            Console.Write("Ingrese año de nacimiento: ");
             year = int.Parse(Console.ReadLine());
-                       
-            birthDate = new DateTime(year, month, day);
+            while (year > DateTime.Now.Year)
+            {
+                Console.Write("Ingrese año de nacimiento: ");
+                year = int.Parse(Console.ReadLine());
+            }
 
-            TimeSpan difference = actualDate - birthDate;// TimeSpan represents the difference between two dates
-            daysLived = (int)difference.TotalDays;
 
-            
-            Console.WriteLine("\nFecha nacimiento: {0}/{1}/{2}", day, month, year);
-            Console.WriteLine("Fecha actual: " + DateTime.Now.ToString("dd/MM/yyyy")); //DateTime.Now.ToString Converts the value of the current DateTime object to its equivalent string representation.
-            Console.WriteLine("{0:#,###} dias vividos", daysLived);
+            birthday = new DateTime(year, month, day);
+            daysLived = actualDate.Subtract(birthday).Days;
 
+
+            Console.Write("\nFecha nacimiento: " + day + "/" + month + "/" + year);
+            Console.Write("\nFecha actual: " + DateTime.Now.ToString("dd/MM/yyyy"));
+            Console.Write("\nDias vividos: {0:#,###}", daysLived);
+
+            Console.ReadLine();
         }
     }
 }

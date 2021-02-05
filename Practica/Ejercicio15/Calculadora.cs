@@ -1,16 +1,19 @@
 ﻿/*Crear una clase llamada Calculadora que posea dos métodos estáticos (de clase):
-
 a. Calcular (público): Recibirá tres parámetros, el primer número, el segundo número y la
 operación matemática. El método devolverá el resultado de la operación.
-
 b. Validar (privado): Recibirá como parámetro el segundo número. Este método se debe
 utilizar sólo cuando la operación elegida sea la DIVISIÓN. Este método devolverá
 TRUE si el número es distinto de CERO*/
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace Ejercicio15
 {
-    public class Calculadora
+    class Calculadora
     {
         public static double Calcular(double firstNumber, double secondNumber, char operation)
         {
@@ -45,7 +48,7 @@ namespace Ejercicio15
         {
             bool validated = false;
 
-            if(secondNumber != 0)
+            if (secondNumber != 0)
             {
                 validated = true;
             }

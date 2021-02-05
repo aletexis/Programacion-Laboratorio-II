@@ -6,12 +6,16 @@ c. double CalcularCirculo(double)
 El ingreso de los datos como la visualización se deberán realizar desde el método Main().*/
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Ejercicio14
 {
-    class MainClass
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.Title = "Ejercicio14";
             double squareSide;
@@ -50,6 +54,7 @@ namespace Ejercicio14
             Console.Write("\nEl area del triangulo es: {0}", triangleArea);
             Console.Write("\nEl area del circulo es: {0}", circleArea);
 
+            Console.ReadKey(true);
         }
     }
 }

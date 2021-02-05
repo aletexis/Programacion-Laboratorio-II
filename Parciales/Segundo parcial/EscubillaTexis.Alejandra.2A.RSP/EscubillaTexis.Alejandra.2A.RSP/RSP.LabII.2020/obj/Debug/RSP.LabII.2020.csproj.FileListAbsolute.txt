@@ -1,0 +1,13 @@
+C:\Users\Ale\Desktop\RSP.LabII.2020\RSP.LabII.2020\bin\Debug\RSP.LabII.2020.exe.config
+C:\Users\Ale\Desktop\RSP.LabII.2020\RSP.LabII.2020\bin\Debug\RSP.LabII.2020.exe
+C:\Users\Ale\Desktop\RSP.LabII.2020\RSP.LabII.2020\bin\Debug\RSP.LabII.2020.pdb
+C:\Users\Ale\Desktop\RSP.LabII.2020\RSP.LabII.2020\bin\Debug\Entidades.dll
+C:\Users\Ale\Desktop\RSP.LabII.2020\RSP.LabII.2020\bin\Debug\Entidades.pdb
+C:\Users\Ale\Desktop\RSP.LabII.2020\RSP.LabII.2020\obj\Debug\RSP.LabII.2020.csprojAssemblyReference.cache
+C:\Users\Ale\Desktop\RSP.LabII.2020\RSP.LabII.2020\obj\Debug\RSP.LabII._2020.RSP.resources
+C:\Users\Ale\Desktop\RSP.LabII.2020\RSP.LabII.2020\obj\Debug\RSP.LabII._2020.Properties.Resources.resources
+C:\Users\Ale\Desktop\RSP.LabII.2020\RSP.LabII.2020\obj\Debug\RSP.LabII.2020.csproj.GenerateResource.cache
+C:\Users\Ale\Desktop\RSP.LabII.2020\RSP.LabII.2020\obj\Debug\RSP.LabII.2020.csproj.CoreCompileInputs.cache
+C:\Users\Ale\Desktop\RSP.LabII.2020\RSP.LabII.2020\obj\Debug\RSP.LabII.2020.csproj.CopyComplete
+C:\Users\Ale\Desktop\RSP.LabII.2020\RSP.LabII.2020\obj\Debug\RSP.LabII.2020.exe
+C:\Users\Ale\Desktop\RSP.LabII.2020\RSP.LabII.2020\obj\Debug\RSP.LabII.2020.pdb

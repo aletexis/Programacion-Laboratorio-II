@@ -3,12 +3,16 @@ mayor que cero, caso contrario, mostrar el mensaje: "ERROR. ¡Reingresar número
 Nota: Utilizar el metodo ‘Pow’ de la clase Math para realizar la operación.*/
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Ejercicio02
 {
-    class MainClass
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.Title = "Ejercicio02";
             int number;
@@ -16,7 +20,7 @@ namespace Ejercicio02
             Console.Write("Ingrese un numero: ");
             number = int.Parse(Console.ReadLine());
 
-            while(number <= 0)
+            while (number <= 0)
             {
                 Console.WriteLine("ERROR. ¡Reingresar número!");
                 Console.Write("Ingrese un numero: ");
@@ -27,6 +31,9 @@ namespace Ejercicio02
             double cubo = Math.Pow(number, 3);
 
             Console.WriteLine("{1} al cuadrado es: {2}{0}{1} al cubo es: {3}", Environment.NewLine, number, cuadrado, cubo);
+
+            Console.ReadKey(true);
         }
+
     }
 }

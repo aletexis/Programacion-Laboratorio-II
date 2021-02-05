@@ -1,7 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace Ejercicio13
 {
-    public class Conversor
+    class Conversor
     {
         public static string DecimalBinario(double dec) //Convierte un número de entero a binario.
         {
@@ -12,7 +17,7 @@ namespace Ejercicio13
             string restStr;
             string resultStr;
 
-            if((int)dec == 0)
+            if ((int)dec == 0)
             {
                 binResult += "0";
                 //Console.Write("\nbin result en class conversor {0}", binResult);
@@ -43,7 +48,7 @@ namespace Ejercicio13
             accumulator += resultStr; //agrego el 1 del resultado de la ultima operacion
 
             //como el acumulador me cargo el binario al reves lo tengo que invertir
-            foreach (char character in accumulator) 
+            foreach (char character in accumulator)
             {
                 binResult = character + binResult;
 
@@ -57,21 +62,21 @@ namespace Ejercicio13
             int dec;
             double multResult = 0;
             double sumResult = 0;
-           
-            for (int i=0; i<bin.Length; i++) //recorro la cadena
+
+            for (int i = 0; i < bin.Length; i++) //recorro la cadena
             {
                 dec = Convert.ToInt32(bin[i]); //en dec se guarda la representacion en ASCII del caracter
 
-                if(dec == 48) //48 es 0 en ASCII
+                if (dec == 48) //48 es 0 en ASCII
                 {
                     dec = 0;
                 }
-                else if(dec == 49) //49 es 1 en ASCII
+                else if (dec == 49) //49 es 1 en ASCII
                 {
                     dec = 1;
                 }
 
-                sumResult = multResult + dec; 
+                sumResult = multResult + dec;
                 multResult = sumResult * 2;
 
             }

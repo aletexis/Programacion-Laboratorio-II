@@ -1,6 +1,0 @@
-/home/ale/Projects/EscubillaTexis.Alejandra/Ejercicio01/bin/Debug/Ejercicio01.exe
-/home/ale/Projects/EscubillaTexis.Alejandra/Ejercicio01/bin/Debug/Ejercicio01.pdb
-/home/ale/Projects/EscubillaTexis.Alejandra/Ejercicio01/obj/x86/Debug/Ejercicio01.csprojAssemblyReference.cache
-/home/ale/Projects/EscubillaTexis.Alejandra/Ejercicio01/obj/x86/Debug/Ejercicio01.csproj.CoreCompileInputs.cache
-/home/ale/Projects/EscubillaTexis.Alejandra/Ejercicio01/obj/x86/Debug/Ejercicio01.exe
-/home/ale/Projects/EscubillaTexis.Alejandra/Ejercicio01/obj/x86/Debug/Ejercicio01.pdb

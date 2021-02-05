@@ -1,0 +1,2 @@
+C:\Users\Ale\Documents\tp_laboratorio_2\TP-02\TP-02\obj\Debug\TP-02.csprojAssemblyReference.cache
+C:\Users\Ale\Documents\tp_laboratorio_2\TP-02\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache

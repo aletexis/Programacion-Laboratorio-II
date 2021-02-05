@@ -10,12 +10,16 @@ utilizar sólo cuando la operación elegida sea la DIVISIÓN. Este método devol
 TRUE si el número es distinto de CERO.*/
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Ejercicio15
 {
-    class MainClass
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.Title = "Ejercicio15";
             double firstNumber;

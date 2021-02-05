@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Ejercicio14
 {
-    public class CalculoDeArea
+    class CalculoDeArea
     {
         public static double CalcularCuadrado(double side)
         {

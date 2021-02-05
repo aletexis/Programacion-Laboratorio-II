@@ -5,14 +5,19 @@ Pedirle al usuario un año de inicio y otro de fin y mostrar todos los años bis
 Nota: Utilizar estructuras repetitivas, selectivas y la función módulo (%).*/
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Ejercicio06
 {
-    class MainClass
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Console.Title = "Ejercicio06";
+            Console.Title = "Ejercicio 06";
+
             int firstYear;
             int lastYear;
             int year;
@@ -34,6 +39,9 @@ namespace Ejercicio06
                     //si es multiplo de 4 y (no es multiplo de 100 o es multiplo de 400)
                 }
             }
+
+            Console.ReadKey(true);
         }
+
     }
 }

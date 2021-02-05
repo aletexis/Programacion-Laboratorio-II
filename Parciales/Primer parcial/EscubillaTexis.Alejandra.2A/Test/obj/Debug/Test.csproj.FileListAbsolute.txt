@@ -1,0 +1,11 @@
+C:\Users\Ale\Documents\EscubillaTexis.Alejandra.2A\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\Ale\Documents\Facultad\EscubillaTexis.Alejandra.2A\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\Ale\Documents\Facultad\EscubillaTexis.Alejandra.2A\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\Ale\Documents\Facultad\EscubillaTexis.Alejandra.2A\Test\bin\Debug\Test.exe.config
+C:\Users\Ale\Documents\Facultad\EscubillaTexis.Alejandra.2A\Test\bin\Debug\Test.exe
+C:\Users\Ale\Documents\Facultad\EscubillaTexis.Alejandra.2A\Test\bin\Debug\Test.pdb
+C:\Users\Ale\Documents\Facultad\EscubillaTexis.Alejandra.2A\Test\bin\Debug\Entidades.dll
+C:\Users\Ale\Documents\Facultad\EscubillaTexis.Alejandra.2A\Test\bin\Debug\Entidades.pdb
+C:\Users\Ale\Documents\Facultad\EscubillaTexis.Alejandra.2A\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\Ale\Documents\Facultad\EscubillaTexis.Alejandra.2A\Test\obj\Debug\Test.exe
+C:\Users\Ale\Documents\Facultad\EscubillaTexis.Alejandra.2A\Test\obj\Debug\Test.pdb

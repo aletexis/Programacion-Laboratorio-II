@@ -6,12 +6,16 @@ El método devolverá un valor de tipo booleano, TRUE si se ingresó una 'S' y F
 cualquier otro valor.*/
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Ejercicio12
 {
-    class MainClass
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.Title = "Ejercicio12";
             int number;
@@ -28,7 +32,7 @@ namespace Ejercicio12
                 Console.Write("\n¿Continuar? (S/N): ");
                 answer = char.Parse(Console.ReadLine());
 
-                while(ValidacionRespuesta.ValidarS_N(answer) == false)
+                while (ValidacionRespuesta.ValidarS_N(answer) == false)
                 {
                     Console.Write("\n\t(!) Error. Respuesta invalida.\n\n¿Continuar? (S/N): ");
                     answer = char.Parse(Console.ReadLine());
@@ -39,6 +43,7 @@ namespace Ejercicio12
             } while (cont == 's' || cont == 'S');
 
             Console.WriteLine("\nLa suma de los numeros ingresados es: {0}", sum);
+            Console.ReadKey(true);
         }
     }
 }

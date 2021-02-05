@@ -8,12 +8,16 @@ Terminado el ingreso mostrar el valor mínimo, el valor máximo y el promedio.
 Nota: Utilizar variables escalares, NO utilizar vectores.*/
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Ejercicio11
 {
-    class MainClass
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.Title = "Ejercicio11";
             int number;
@@ -22,20 +26,20 @@ namespace Ejercicio11
             int sum = 0;
             float average;
 
-            for(int i=0; i<10; i++)
+            for (int i = 0; i < 10; i++)
             {
-                Console.Write("\nIngrese el numero entero Nº{0}: ", i+1);
+                Console.Write("\nIngrese el numero entero Nº{0}: ", i + 1);
                 number = int.Parse(Console.ReadLine());
 
 
                 while (Validacion.Validar(number, -100, 100) == false)
                 {
-                    Console.Write("\n\t(!) Error, numero fuera de rango.\n\tIngrese el numero entero Nº{0}: ", i+1);
+                    Console.Write("\n\t(!) Error, numero fuera de rango.\n\tIngrese el numero entero Nº{0}: ", i + 1);
                     number = int.Parse(Console.ReadLine());
                 }
 
-               sum += number;
-            
+                sum += number;
+
                 if (number > max)
                 {
                     max = number;
@@ -43,12 +47,14 @@ namespace Ejercicio11
                 if (number < min)
                 {
                     min = number;
-                }     
+                }
             }
 
             average = (sum / 10);
 
             Console.WriteLine("\nValor minimo: {0}\nValor maximo: {1} \nPromedio: {2: 0.00}\n", min, max, average);
+
+            Console.ReadKey(true);
         }
     }
 }

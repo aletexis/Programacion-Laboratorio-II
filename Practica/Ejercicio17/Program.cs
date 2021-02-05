@@ -1,4 +1,18 @@
 ﻿/*Crear la clase Bolígrafo a partir del siguiente diagrama:
+ * 
+ * Campos:
+ * ?? cantidadTintaMaxima : short
+ * private color : ConsoleColor
+ * private tinta : short
+ * 
+ * Metodos:
+ * public Boligrafo(short tinta, ConsoleColor color)
+ * public GetColor() : ConsoleColor
+ * public GetTinta() : short
+ * public Pintar(short gasto, out string dibujo) : bool
+ * public Recargar() : void
+ * private SetTinta(short tinta) : void
+ * 
 a. La cantidad máxima de tinta para todos los bolígrafos será de 100. Generar una constante
 en el Boligrafo llamada cantidadTintaMaxima donde se guardará dicho valor.
 b. Generar los métodos GetColor y GetTinta para los correspondientes atributos (sólo
@@ -21,18 +35,30 @@ h. Al utilizar Pintar, si corresponde, se deberá dibujar por pantalla con el co
 bolígrafo.
 Nota: Crear el constructor que crea conveniente. La clase Boligrafo y el Program deben estar en
 namespaces distintos.
-
 */
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Ejercicio17Boligrafo;
 
 namespace Ejercicio17
 {
-    class MainClass
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Boligrafo boligrafoAzul = new Boligrafo(100, ConsoleColor.Blue);
+            Boligrafo boligrafoRojo = new Boligrafo(50, ConsoleColor.Red);
+
+            string cadena = "Sin tinta para escribir.";
+            boligrafoAzul.Recargar();
+
+            boligrafoAzul.Pintar(-50, out cadena);
+            boligrafoRojo.Pintar(-10, out cadena);
+            Console.ReadLine();
         }
     }
 }

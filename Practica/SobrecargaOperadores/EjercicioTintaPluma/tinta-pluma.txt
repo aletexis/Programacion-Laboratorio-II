@@ -1,0 +1,54 @@
+ETipoTinta{Comun, China, ConBrillito}---> archivo de código//code file
+
+Tinta{
+
+(-) color:ConsoleColor
+(-) tipo:ETipoTinta 
+
+
+//constructor 0, 1, 2 parametros
+//por defecto->Black; Comun
+
+//instancia
+(-)Mostrar():string
+
+//clase
+(+)Mostrar(Tinta):string
+
+
+//sobrecarga de operadores
+
+== (Tinta, Tinta): bool //color y tipo
+
+explicit (Tinta) : string 
+
+
+}
+
+
+Pluma{
+
+(-) marca:string
+(-) tinta:Tinta
+(-) cantidad:int
+
+//constructor 0, 1, 2 y 3 parametros.
+//por defecto->"Sin marca"; null; 1;
+
+//instancia
+(-)Mostrar():string
+
+
+==(Pluma, Tinta):bool
+
++(Pluma, Tinta):Pluma // agrega solo si las tintas son iguales. (incrementar cantidad)
+-(Pluma, Tinta):Pluma // agrega solo si las tintas son iguales. (decrementar cantidad)
+
+implicit (Pluma):string //se relaciona con mostrar
+
+}
+
+
+
+
+
